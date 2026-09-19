@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stomatologji - Poliklinika Swiss Plus</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .service-hero {
+           background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(/img/stomatolog.jpg);
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 70px;
+        }
+
+        .service-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .service-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-feature i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-feature h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            margin: 3rem 0;
+            line-height: 1.8;
+            color: #4a5677;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Swiss Plus Logo" class="logo-img">
+                <h1>Poliklinika Swiss Plus</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#kryefaqja">Kryefaqja</a></li>
+                <li><a href="../index.html#shërbimet">Shërbimet</a></li>
+                <li><a href="../index.html#mjekët">Mjekët</a></li>
+                <li><a href="../index.html#orari">Orari</a></li>
+                <li><a href="../index.html#kontakti">Kontakti</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <div class="hero-content">
+                <h1>Shërbimet Stomatologjike</h1>
+                <p>Kujdesi më i mirë për buzëqeshjen tuaj</p>
+            </div>
+        </section>
+
+        <section class="service-content">
+            <a href="../index.html#shërbimet" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Kthehu te Shërbimet
+            </a>
+
+            <div class="service-description">
+                <h2>Rreth Shërbimeve Tona Stomatologjike</h2>
+                <p>Në Poliklinikën Swiss Plus, ofrojmë shërbime stomatologjike moderne me teknologjinë më të fundit dhe një ekip mjekësor me përvojë. Fokusi ynë është në ofrimin e kujdesit më të mirë për shëndetin e dhëmbëve tuaj me qasje moderne dhe pa dhimbje.</p>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-feature" data-aos="fade-up">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Kujdes Preventiv</h3>
+                    <p>Pastroje profesionale, ekzaminime të rregullta dhe këshilla për kujdesin e dhëmbëve.</p>
+                </div>
+
+                <div class="service-feature" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-teeth"></i>
+                    <h3>Estetikë Dentare</h3>
+                    <p>Vizatime të bardha, veneers dhe procedura të tjera për përmirësimin e pamjes së dhëmbëve.</p>
+                </div>
+
+                <div class="service-feature" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Endodonti</h3>
+                    <p>Trajtim i kanaleve rrënjësore dhe procedura të tjera për shpëtimin e dhëmbëve.</p>
+                </div>
+
+                <div class="service-feature" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-teeth-open"></i>
+                    <h3>Proteza Dentare</h3>
+                    <p>Proteza të përshtatshme dhe implantë dentare për zëvendësimin e dhëmbëve të humbur.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../img/logo1.png" alt="Swiss Plus Logo" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <ul class="nav-links">
+                    <li><a href="../index.html#kryefaqja">Kryefaqja</a></li>
+                    <li><a href="../index.html#shërbimet">Shërbimet</a></li>
+                    <li><a href="../index.html#mjekët">Mjekët</a></li>
+                    <li><a href="../index.html#orari">Orari</a></li>
+                    <li><a href="../index.html#kontakti">Kontakti</a></li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/feriz.high.1" class="social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+38344755111" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="social-link"><i class="fab fa-viber"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Poliklinika Swiss Plus. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html> 
