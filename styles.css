@@ -72,15 +72,22 @@ nav {
 }
 
 .logo-img {
-  height: 64px;
+  height: 44px;
   width: auto;
+  display: block;
   object-fit: contain;
 }
 
+/* The logo already spells out "Swiss Plus Poliklinikë"; keep the heading for
+   screen readers and SEO but don't repeat it visually. */
 .logo h1 {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  font-weight: 600;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -254,6 +261,9 @@ nav {
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card::before {
@@ -294,6 +304,7 @@ nav {
 }
 
 .learn-more {
+  margin-top: auto; /* pin to the card bottom so links line up across a row */
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 600;
@@ -633,9 +644,10 @@ footer {
 }
 
 .footer-logo {
-  height: 110px;
+  height: 70px;
   width: auto;
   max-width: 100%;
+  margin-bottom: 1.5rem;
   object-fit: contain;
 }
 
@@ -771,11 +783,7 @@ footer {
   }
 
   .logo-img {
-    height: 46px;
-  }
-
-  .logo h1 {
-    font-size: 1.1rem;
+    height: 36px;
   }
 
   .hero-content h1 {
