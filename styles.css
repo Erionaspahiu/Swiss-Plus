@@ -72,7 +72,7 @@ nav {
 }
 
 .logo-img {
-  height: 70px;
+  height: 64px;
   width: auto;
   object-fit: contain;
 }
@@ -375,35 +375,6 @@ nav {
   transform: scale(1.1);
 }
 
-.doctor-social {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  transition: var(--transition);
-}
-
-.doctor-card:hover .doctor-social {
-  bottom: 0;
-}
-
-.doctor-social a {
-  color: var(--white);
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: var(--transition);
-  text-decoration: none;
-}
-
-.doctor-social a:hover {
-  color: var(--accent-color);
-}
-
 .doctor-info {
   padding: 1.5rem;
   text-align: center;
@@ -478,64 +449,6 @@ nav {
 .dot.active {
   background: var(--primary-color);
   transform: scale(1.2);
-}
-
-/* Orari */
-.schedule {
-  padding: 8rem 1rem;
-  background: var(--light-bg);
-}
-
-.schedule h2 {
-  text-align: center;
-  margin-bottom: 4rem;
-  color: var(--primary-color);
-  font-size: 2.5rem;
-  position: relative;
-}
-
-.schedule h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background: var(--gradient-primary);
-}
-
-.schedule-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.schedule-item {
-  background: var(--white);
-  padding: 2rem;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-}
-
-.schedule-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-}
-
-.schedule-item i {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.schedule-item h3 {
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
 }
 
 /* Kontakti */
@@ -720,12 +633,10 @@ footer {
 }
 
 .footer-logo {
-  height: 150px;
+  height: 110px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
-  border-radius: 160px 0 0 160px;
-  box-shadow: none;
-  padding: 0.3rem 0.8rem;
 }
 
 .footer-section h3 {
@@ -860,7 +771,7 @@ footer {
   }
 
   .logo-img {
-    height: 50px;
+    height: 46px;
   }
 
   .logo h1 {
@@ -878,14 +789,12 @@ footer {
 
   .services h2,
   .doctors h2,
-  .schedule h2,
   .contact h2 {
     font-size: 2rem;
   }
 
   .services,
   .doctors,
-  .schedule,
   .contact {
     padding: 5rem 1rem;
   }
@@ -1154,13 +1063,6 @@ footer {
   }
   .info-item {
     padding: 1.5rem;
-  }
-}
-
-/* Touch screens have no hover: always show the schedule link on doctor cards */
-@media (hover: none) {
-  .doctor-social {
-    bottom: 0;
   }
 }
 
