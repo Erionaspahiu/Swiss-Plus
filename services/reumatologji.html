@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Poliklinika Swiss Plus – kardiologji, stomatologji, fiziatri, pulmologji, reumatologji, mjekësi e përgjithshme dhe vizita shtëpiake." />
+    <link rel="icon" type="image/png" href="../img/logo.png" />
     <title>Reumatologji - Poliklinika Swiss Plus</title>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -14,7 +16,7 @@
                     rgba(0, 0, 0, 0.7),
                     rgba(0, 0, 0, 0.7)
                 ),
-                url(/img/reum.jpg);
+                url('../img/reum.jpg');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -94,16 +96,16 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../index.html#kryefaqja">Kryefaqja</a></li>
-                <li><a href="../index.html#shërbimet">Shërbimet</a></li>
-                <li><a href="../index.html#mjekët">Mjekët</a></li>
+                <li><a href="../index.html#sherbimet">Shërbimet</a></li>
+                <li><a href="../index.html#mjeket">Mjekët</a></li>
                 <li><a href="../index.html#orari">Orari</a></li>
                 <li><a href="../index.html#kontakti">Kontakti</a></li>
             </ul>
-            <div class="burger">
+            <button class="burger" type="button" aria-label="Hap menunë" aria-expanded="false">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </button>
         </nav>
     </header>
 
@@ -116,7 +118,7 @@
         </section>
 
         <section class="service-content">
-            <a href="../index.html#shërbimet" class="back-button">
+            <a href="../index.html#sherbimet" class="back-button">
                 <i class="fas fa-arrow-left"></i>
                 Kthehu te Shërbimet
             </a>
@@ -172,26 +174,25 @@
             <div class="footer-section">
                 <ul class="nav-links">
                     <li><a href="../index.html#kryefaqja">Kryefaqja</a></li>
-                    <li><a href="../index.html#shërbimet">Shërbimet</a></li>
-                    <li><a href="../index.html#mjekët">Mjekët</a></li>
+                    <li><a href="../index.html#sherbimet">Shërbimet</a></li>
+                    <li><a href="../index.html#mjeket">Mjekët</a></li>
                     <li><a href="../index.html#orari">Orari</a></li>
                     <li><a href="../index.html#kontakti">Kontakti</a></li>
                 </ul>
 
                 <div class="social-links">
-                    <a href="https://www.facebook.com/feriz.high.1" class="social-link" target="_blank">
+                    <a href="https://www.facebook.com/feriz.high.1" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/+38344755111" target="_blank" class="social-link">
+                    <a href="https://wa.me/38344755111" target="_blank" class="social-link" rel="noopener noreferrer" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="#" class="social-link"><i class="fab fa-viber"></i></a>
+                    <a href="viber://chat?number=%2B38344755111" class="social-link" aria-label="Viber"><i class="fab fa-viber"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Poliklinika Swiss Plus. Të gjitha të drejtat e rezervuara.</p>
+            <p>&copy; <span class="current-year">2026</span> Poliklinika Swiss Plus. Të gjitha të drejtat e rezervuara.</p>
         </div>
     </footer>
 

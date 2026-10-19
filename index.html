@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Poliklinika Swiss Plus – kardiologji, stomatologji, fiziatri, pulmologji, reumatologji, mjekësi e përgjithshme dhe vizita shtëpiake." />
+    <link rel="icon" type="image/png" href="img/logo.png" />
     <title>Poliklinika Swiss Plus</title>
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -20,23 +22,23 @@
         </div>
         <ul class="nav-links">
           <li><a href="#kryefaqja">Kryefaqja</a></li>
-          <li><a href="#shërbimet">Shërbimet</a></li>
-          <li><a href="#mjekët">Mjekët</a></li>
+          <li><a href="#sherbimet">Shërbimet</a></li>
+          <li><a href="#mjeket">Mjekët</a></li>
           <li><a href="#orari">Orari</a></li>
           <li><a href="#kontakti">Kontakti</a></li>
         </ul>
-        <div class="burger">
+        <button class="burger" type="button" aria-label="Hap menunë" aria-expanded="false">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
-        </div>
+        </button>
       </nav>
     </header>
 
     <main>
       <section id="kryefaqja" class="hero">
         <div class="hero-video">
-          <video autoplay muted loop id="myVideo">
+          <video autoplay muted loop playsinline id="myVideo" aria-hidden="true">
             <source src="img/videodok.mp4" type="video/mp4" />
           </video>
         </div>
@@ -45,12 +47,12 @@
           <p>Kujdesi më i mirë për shëndetin tuaj</p>
           <div class="hero-buttons">
             <a href="#kontakti" class="cta-button primary">Na Kontaktoni</a>
-            <a href="#shërbimet" class="cta-button secondary">Shërbimet Tona</a>
+            <a href="#sherbimet" class="cta-button secondary">Shërbimet Tona</a>
           </div>
         </div>
       </section>
 
-      <section id="shërbimet" class="services">
+      <section id="sherbimet" class="services">
         <h2 data-aos="fade-up">Shërbimet Tona</h2>
         <div class="services-grid">
           <div class="service-card" data-aos="fade-up" data-aos-delay="100">
@@ -114,71 +116,71 @@
         </div>
       </section>
 
-      <section id="mjekët" class="doctors">
+      <section id="mjeket" class="doctors">
         <h2 data-aos="fade-up">Ekipi Ynë Mjekësor</h2>
         <div class="doctors-slider">
           <div class="doctors-grid" id="doctorsTrack">
             <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
               <div class="doctor-image">
-                <img src="img/doktorfatmiri.jpg" alt="Dr. Fatmiri" />
+                <img src="img/doktorfatmiri.jpg" alt="Dr. Fatmiri" loading="lazy" />
                 <div class="doctor-social">
-                  <a href="#">Orari i punes</a>
+                  <a href="#orari">Orari i punës</a>
                 </div>
               </div>
               <div class="doctor-info">
                 <h3>Dr. Fatmiri</h3>
-                <p class="specialty">Fiziater</p>
+                <p class="specialty">Fiziatër</p>
                 <p class="experience">15+ vite përvojë</p>
               </div>
             </div>
             <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
               <div class="doctor-image">
-                <img src="img/dr.fisi.jpg" alt="Dr.Fisi" />
+                <img src="img/dr.fisi.jpg" alt="Dr. Fisnik Frangu" loading="lazy" />
                 <div class="doctor-social">
-                  <a href="#">Orari i punes</a>
+                  <a href="#orari">Orari i punës</a>
                 </div>
               </div>
               <div class="doctor-info">
-                <h3>Dr.Fisnik Frangu</h3>
+                <h3>Dr. Fisnik Frangu</h3>
                 <p class="specialty">Mjek i përgjithshëm</p>
                 <p class="experience">10+ vite përvojë</p>
               </div>
             </div>
             <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
               <div class="doctor-image">
-                <img src="img/dr.albani.jpg" alt="Dr.Albani" />
+                <img src="img/dr.albani.jpg" alt="Dr. Alban Gashi" loading="lazy" />
                 <div class="doctor-social">
-                  <a href="#">Orari i punes</a>
+                  <a href="#orari">Orari i punës</a>
                 </div>
               </div>
               <div class="doctor-info">
-                <h3>Dr.Alban Gashi</h3>
+                <h3>Dr. Alban Gashi</h3>
                 <p class="specialty">Mjek i përgjithshëm</p>
                 <p class="experience">12+ vite përvojë</p>
               </div>
             </div>
             <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
               <div class="doctor-image">
-                <img src="img/beka.png" alt="Dr. Fatmiri" />
+                <img src="img/beka.png" alt="Dr. Bekim Mustafa" loading="lazy" />
                 <div class="doctor-social">
-                  <a href="#">Orari i punes</a>
+                  <a href="#orari">Orari i punës</a>
                 </div>
               </div>
               <div class="doctor-info">
-                <h3>Dr.Bekim Mustafa</h3>
+                <h3>Dr. Bekim Mustafa</h3>
                 <p class="specialty">Pulmolog</p>
                 <p class="experience">15+ vite përvojë</p>
               </div>
             </div>
             <div class="doctor-card" data-aos="fade-up" data-aos-delay="400">
               <div class="doctor-image">
-                <img src="img/shpendii.png" alt="Dr. Emri Mjekut" />
+                <img src="img/shpendii.png" alt="Dr. Shpend Idrizi" loading="lazy" />
                 <div class="doctor-social">
-                  <a href="#">Orari i punes</a>
+                  <a href="#orari">Orari i punës</a>
                 </div>
               </div>
               <div class="doctor-info">
-                <h3>Dr.Shpend Idrizi</h3>
+                <h3>Dr. Shpend Idrizi</h3>
                 <p class="specialty">Kardiolog</p>
                 <p class="experience">8+ vite përvojë</p>
               </div>
@@ -188,7 +190,6 @@
             <button class="slider-arrow prev" aria-label="Previous">
               <i class="fas fa-chevron-left"></i>
             </button>
-            <div class="slider-dots"></div>
             <button class="slider-arrow next" aria-label="Next">
               <i class="fas fa-chevron-right"></i>
             </button>
@@ -222,6 +223,7 @@
           <div class="home-visits-image">
             <img
               src="img/valoni.png"
+              loading="lazy"
               alt="Auto për vizita shtëpiake Swiss Plus"
             />
           </div>
@@ -242,48 +244,47 @@
             </ul>
           </div>
         </div>
+      </section>
 
-        <section id="kontakti" class="contact">
-          <h2 data-aos="fade-up">Na Kontaktoni</h2>
-          <div class="ato-tria">
-          <div class="contact-container">
-              <div class="contact-info" data-aos="fade-right">
-                <div class="info-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div>
-                    <h3>Adresa</h3>
-                    <p>Rr.Vllezerit</p>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <i class="fas fa-phone"></i>
-                  <div>
-                    <h3>Telefoni</h3>
-                    <p>044-755-111</p>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <i class="fas fa-envelope"></i>
-                  <div>
-                    <h3>Email</h3>
-                    <p>Swissplus@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-              </div>
-              </div>
-              <div class="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.3560901017027!2d21.164948!3d42.380614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547e4342a48503%3A0x96901dc7a347dac!2sPoliklinika%20%22Swiss%20Plus%22!5e0!3m2!1sen!2s!4v1234567890"
-                  width="100%"
-                  height="250"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                ></iframe>
+      <section id="kontakti" class="contact">
+        <h2 data-aos="fade-up">Na Kontaktoni</h2>
+        <div class="contact-container">
+          <div class="contact-info" data-aos="fade-up">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Adresa</h3>
+                <p>Rr. Vëllezërit Gërvalla, Ferizaj 70000</p>
               </div>
             </div>
-        </section>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Telefoni</h3>
+                <p><a href="tel:+38344755111">044-755-111</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:swissplus@gmail.com">swissplus@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="map-container" data-aos="fade-up">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.3560901017027!2d21.164948!3d42.380614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547e4342a48503%3A0x96901dc7a347dac!2sPoliklinika%20%22Swiss%20Plus%22!5e0!3m2!1sen!2s!4v1234567890"
+              title="Vendndodhja e Poliklinikës Swiss Plus në hartë"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -295,8 +296,8 @@
         <div class="footer-section">
           <ul class="nav-links">
             <li><a href="#kryefaqja">Kryefaqja</a></li>
-            <li><a href="#shërbimet">Shërbimet</a></li>
-            <li><a href="#mjekët">Mjekët</a></li>
+            <li><a href="#sherbimet">Shërbimet</a></li>
+            <li><a href="#mjeket">Mjekët</a></li>
             <li><a href="#orari">Orari</a></li>
             <li><a href="#kontakti">Kontakti</a></li>
           </ul>
@@ -305,23 +306,22 @@
             <a
               href="https://www.facebook.com/feriz.high.1"
               class="social-link"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer" aria-label="Facebook"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a
-              href="https://wa.me/+38344755111"
+              href="https://wa.me/38344755111"
               target="_blank"
-              class="social-link"
+              class="social-link" rel="noopener noreferrer" aria-label="WhatsApp"
               ><i class="fab fa-whatsapp"></i
             ></a>
-            <a href="#" class="social-link"><i class="fab fa-viber"></i></a>
+            <a href="viber://chat?number=%2B38344755111" class="social-link" aria-label="Viber"><i class="fab fa-viber"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p>
-          &copy; 2024 Poliklinika Swiss Plus. Të gjitha të drejtat e rezervuara.
+          &copy; <span class="current-year">2026</span> Poliklinika Swiss Plus. Të gjitha të drejtat e rezervuara.
         </p>
       </div>
     </footer>
